@@ -1,0 +1,113 @@
+@media screen and (max-width: 300px) {
+    h1{
+        font-size:24px;
+    }
+    body {
+        font-size: 14px;
+    }
+    .deck {
+        width: 170px;
+        min-height: 50px;
+        padding: 10px;
+    }
+    .deck .card {
+        width: 35px;
+        height: 35px;
+    }
+    .deck .card > * {
+        font-size: 50%;
+    }
+}
+
+@media screen and (min-width:301px) and (max-width: 410px) {
+    body {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    .deck {
+        width: 300px;
+        min-height: 200px;
+    }
+    .deck .card {
+        width: 50px;
+        height: 50px;
+    }
+    .score-panel {
+        text-align: center;
+    }
+    .deck .card > * {
+        font-size: 75%;
+    }
+    .playButton {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .modal {
+        width: 70%;
+        height: 60%;
+    }
+}
+
+@media screen and (min-width: 411px) and (max-width: 550px) {
+    body {
+        font-size: 18px;
+    }
+    .deck {
+        width: 390px;
+        min-height: 200px;
+    }
+    .deck .card {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 5px;
+    }
+    .score-panel {
+        text-align: center;
+    }
+    .deck .card > * {
+        font-size: 75%;
+    }
+    .playButton {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .modal {
+        width: 70%;
+        height: 60%;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 800px) {
+    .deck {
+        width: 530px;
+        min-height: 200px;
+    }
+    .deck .card {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+    }
+    .score-panel {
+        text-align: center;
+    }
+    .deck .card > * {
+        font-size: 75%;
+    }
+    .playButton {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .modal {
+        width: 70%;
+        height: 60%;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width:1600px){
+    .modal {
+        width: 40%;
+        height: 50%;
+    }
+}

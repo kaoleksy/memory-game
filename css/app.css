@@ -1,0 +1,155 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff url('../img/geometry2.png');
+    font-family: 'Coda', cursive;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 72px;
+    margin-bottom: 0px;
+}
+
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+    width: 660px;
+    min-height: 680px;
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
+.deck .card {
+    height: 125px;
+    width: 125px;
+    background: #2e3d49;
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card .open {
+    transform: rotateY(0);
+    background: #02b3e4;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 33px;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #02ccba;
+    font-size: 33px;
+}
+
+
+/*
+ * Styles for the Score Panel
+ */
+.score-panel {
+    text-align: center;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .restart {
+    cursor: pointer;
+}
+
+.deck li.disable {
+    pointer-events: none; 
+}
+
+/*
+ * Styles for the Modal 
+ */
+.modal {
+    text-align: center;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    display: none;
+    z-index: 50;
+    background-color: rgb(234, 249, 255);
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+.modal li {
+    list-style-type: none;
+}
+
+.playButton {
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #59d6ff), color-stop(1, #287591));
+	background:-moz-linear-gradient(top, #59d6ff 5%, #287591 100%);
+	background:-webkit-linear-gradient(top, #59d6ff 5%, #287591 100%);
+	background:-o-linear-gradient(top, #59d6ff 5%, #287591 100%);
+	background:-ms-linear-gradient(top, #59d6ff 5%, #287591 100%);
+	background:linear-gradient(to bottom, #59d6ff 5%, #287591 100%);
+	background-color:#59d6ff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #087fc9;
+	display:inline-block;
+    color: white;
+    cursor: pointer;
+    font-family: 'Shadows Into Light Two', cursive;
+	font-size: 20px;
+	font-weight: bold;
+    padding:6px 24px;
+}
+
